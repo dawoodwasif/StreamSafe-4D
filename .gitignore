@@ -1,0 +1,8 @@
+.env
+*.pt
+**/.env
+**/*.properties
+**/*.mp4
+**/*.pt
+Safe-and-Unsafe-Behaviours-Dataset/
+__pycache__/

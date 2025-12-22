@@ -1,0 +1,9 @@
+pandas
+opencv-python
+numpy
+pytorch
+scikit-learn
+confluent-kafka>=2.3.0
+torch 
+torchvision 
+pytorchvideo

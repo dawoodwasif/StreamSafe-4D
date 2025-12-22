@@ -1,0 +1,14 @@
+{
+  "broker": "localhost:9092",
+  "saslMechanism": "plain",
+  "riskAlertsTopic": "risk-alerts",
+  "clientId": "streamsafe-dashboard",
+  "consumerGroupId": "streamsafe-dashboard-group",
+  "lowRiskMax": 25,
+  "mediumRiskMax": 50,
+  "highRiskMax": 75,
+  "criticalRiskMax": 90,
+  "useMockData": true,
+  "saslUsername": "",
+  "saslPassword": ""
+}
