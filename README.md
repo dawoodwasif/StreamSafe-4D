@@ -1,8 +1,3 @@
-<!-- Logo first (no heading above) -->
-<p align="center">
-  <img src="./docs/streamsafe-logo.png" alt="StreamSafe 4D" width="220" />
-</p>
-
 <h1 align="center">StreamSafe 4D</h1>
 
 <p align="center">
@@ -37,11 +32,13 @@ While transformer-based and efficient temporal models showed competitive learnin
 
 ### Validation accuracy (comparison)
 
-![Validation Accuracy Comparison](./docs/validation-accuracy-comparison.png)
-
-### Training accuracy (comparison)
-
-![Training Accuracy Comparison](./docs/training-accuracy-comparison.png)
+<p align="center">
+  <img src="./docs/validation-accuracy-comparison.png" alt="Validation Accuracy Comparison" width="420" />
+  <img src="./docs/training-accuracy-comparison.png" alt="Training Accuracy Comparison" width="420" />
+</p>
+<p align="center">
+  <sub><b>Left:</b> Validation accuracy comparison &nbsp;&nbsp;|&nbsp;&nbsp; <b>Right:</b> Training accuracy comparison</sub>
+</p>
 
 ---
 
