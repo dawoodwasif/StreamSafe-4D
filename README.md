@@ -1,6 +1,17 @@
-# StreamSafe 4D
+<!-- Logo first (no heading above) -->
+<p align="center">
+  <img src="./docs/streamsafe-logo.png" alt="StreamSafe 4D" width="220" />
+</p>
 
-StreamSafe 4D is a real-time industrial safety “digital twin” for factories and warehouses. Cameras (or recorded warehouse videos) feed lightweight edge services that detect people and classify short clips into **safe/unsafe workplace behaviors**. These events, together with machine telemetry, are published into **Kafka (Confluent Cloud)** as “data in motion”. A React dashboard provides operational views (zones/workers/alerts/analytics) and a **Safety Reports** section where **Gemini** turns incident streams into human-readable explanations, shift summaries, and actionable checklists.
+<h1 align="center">StreamSafe 4D</h1>
+
+<p align="center">
+  Real-time industrial safety “digital twin” for factories and warehouses — video → inference → Kafka (Confluent Cloud) → analytics + Gemini reports.
+</p>
+
+---
+
+StreamSafe 4D is a real-time industrial safety “digital twin” for factories and warehouses. Cameras (or recorded warehouse videos) feed lightweight edge services that detect people and classify short clips into <b>safe/unsafe workplace behaviors</b>. These events, together with machine telemetry, are published into <b>Kafka (Confluent Cloud)</b> as “data in motion”. A React dashboard provides operational views (zones/workers/alerts/analytics) and a <b>Safety Reports</b> section where <b>Gemini</b> turns incident streams into human-readable explanations, shift summaries, and actionable checklists.
 
 ---
 
@@ -15,6 +26,22 @@ StreamSafe 4D is a real-time industrial safety “digital twin” for factories 
   - Includes AI-driven `Safety Reports` page (Gemini)
 - `README.md` (this file)
   - High-level overview and quickstart
+
+---
+
+## Training results (model comparison)
+
+We evaluated five representative and widely used action recognition models—**SlowFast**, **I3D**, **TwoStream**, **TSM**, and **TimeSformer**—under a unified training and evaluation protocol on our dataset to ensure a fair comparison. All models were trained for the same number of epochs with matched input resolutions, optimization settings, and data splits, and were assessed using identical validation metrics.
+
+While transformer-based and efficient temporal models showed competitive learning trends, **SlowFast consistently achieved higher and more stable validation accuracy**, particularly in later epochs, and demonstrated better robustness to class imbalance and fast motion patterns common in industrial safety scenarios. Based on this empirical comparison, **SlowFast emerged as the most reliable performer overall**, leading us to select it as the backbone for the StreamSafe system.
+
+### Validation accuracy (comparison)
+
+![Validation Accuracy Comparison](./docs/validation-accuracy-comparison.png)
+
+### Training accuracy (comparison)
+
+![Training Accuracy Comparison](./docs/training-accuracy-comparison.png)
 
 ---
 
