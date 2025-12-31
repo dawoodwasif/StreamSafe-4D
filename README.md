@@ -1,6 +1,6 @@
 <!-- Logo first (no heading above) -->
 <p align="center">
-  <img src="./docs/streamsafe-logo.png" alt="StreamSafe 4D" width="220" />
+  <img src="./docs/streamsafe-logo.png" alt="StreamSafe 4D" width="420" />
 </p>
 
 <h1 align="center">StreamSafe 4D</h1>
