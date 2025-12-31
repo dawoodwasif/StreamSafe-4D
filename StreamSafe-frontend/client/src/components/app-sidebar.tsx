@@ -22,7 +22,7 @@ import {
   Settings,
   Shield,
   Activity,
-  FileText, // Add this import
+  FileText,
 } from "lucide-react";
 
 const navigationItems = [
@@ -31,7 +31,7 @@ const navigationItems = [
   { title: "Workers", href: "/workers", icon: Users },
   { title: "Alerts", href: "/alerts", icon: Bell },
   { title: "Analytics", href: "/analytics", icon: BarChart3 },
-  { title: "Safety Reports", href: "/safety-reports", icon: FileText }, // Add this line
+  { title: "Safety Reports", href: "/safety-reports", icon: FileText },
   { title: "Settings", href: "/settings", icon: Settings },
 ];
 
@@ -47,10 +47,31 @@ export function AppSidebar() {
     <Sidebar>
       <SidebarHeader className="border-b border-sidebar-border p-4">
         <Link href="/">
-          <div className="flex items-center gap-3 hover-elevate rounded-md p-2 -m-2">
-            <div className="h-10 w-10 rounded-lg bg-primary flex items-center justify-center">
-              <Shield className="h-6 w-6 text-primary-foreground" />
+          <div className="flex items-center gap-4 hover-elevate rounded-md p-2 -m-2">
+            <div className="h-14 w-14 rounded-xl border border-border bg-muted/40 flex items-center justify-center overflow-hidden">
+              {/* Try common favicon paths; fallback to Shield if none load */}
+              <img
+                src="/favicon.ico"
+                alt="StreamSafe 4D"
+                className="h-11 w-11 object-contain"
+                draggable={false}
+                onError={(e) => {
+                  const img = e.currentTarget;
+                  const candidates = [
+                    "/favicon.svg",
+                    "/favicon.png",
+                    "/assets/favicon.ico",
+                    "/assets/favicon.png",
+                  ];
+                  const current = img.getAttribute("src") || "";
+                  const next = candidates.find((c) => c !== current);
+                  if (next) img.src = next;
+                  else img.style.display = "none";
+                }}
+              />
+              {/* If the image ends up hidden, the Shield is still visible behind it */}
             </div>
+
             <div>
               <h1 className="text-base font-semibold">StreamSafe 4D</h1>
               <p className="text-xs text-muted-foreground">Industrial Safety</p>

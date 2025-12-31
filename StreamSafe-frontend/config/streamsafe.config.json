@@ -9,6 +9,7 @@
   "highRiskMax": 75,
   "criticalRiskMax": 90,
   "useMockData": true,
+  "streamUrl": "https://handhelds-anderson-tapes-bicycle.trycloudflare.com/stream",
   "saslUsername": "",
   "saslPassword": ""
 }
