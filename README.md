@@ -33,8 +33,9 @@ While transformer-based and efficient temporal models showed competitive learnin
 ### Validation accuracy (comparison)
 
 <p align="center">
-  <img src="./docs/validation-accuracy-comparison.png" alt="Validation Accuracy Comparison" width="320" />
-  <img src="./docs/training-accuracy-comparison.png" alt="Training Accuracy Comparison" width="320" />
+  <img src="./docs/validation-accuracy-comparison.png" alt="Validation Accuracy Comparison" width="350" />
+  
+  <img src="./docs/training-accuracy-comparison.png" alt="Training Accuracy Comparison" width="350" />
 </p>
 <p align="center">
   <sub><b>Left:</b> Validation accuracy comparison &nbsp;&nbsp;|&nbsp;&nbsp; <b>Right:</b> Training accuracy comparison</sub>
