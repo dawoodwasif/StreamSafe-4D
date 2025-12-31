@@ -22,6 +22,7 @@ import {
   Settings,
   Shield,
   Activity,
+  FileText, // Add this import
 } from "lucide-react";
 
 const navigationItems = [
@@ -30,6 +31,7 @@ const navigationItems = [
   { title: "Workers", href: "/workers", icon: Users },
   { title: "Alerts", href: "/alerts", icon: Bell },
   { title: "Analytics", href: "/analytics", icon: BarChart3 },
+  { title: "Safety Reports", href: "/safety-reports", icon: FileText }, // Add this line
   { title: "Settings", href: "/settings", icon: Settings },
 ];
 

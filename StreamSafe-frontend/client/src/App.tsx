@@ -19,6 +19,7 @@ import WorkerDetail from "@/pages/worker-detail";
 import Alerts from "@/pages/alerts";
 import Analytics from "@/pages/analytics";
 import Settings from "@/pages/settings";
+import SafetyReports from "@/pages/safety-reports";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -31,6 +32,7 @@ function Router() {
       <Route path="/workers/:id" component={WorkerDetail} />
       <Route path="/alerts" component={Alerts} />
       <Route path="/analytics" component={Analytics} />
+      <Route path="/safety-reports" component={SafetyReports} />
       <Route path="/settings" component={Settings} />
       <Route component={NotFound} />
     </Switch>
@@ -43,11 +45,11 @@ function CurrentTime() {
     <div className="flex items-center gap-2 text-sm text-muted-foreground">
       <Clock className="h-4 w-4" />
       <span className="font-mono">
-        {now.toLocaleTimeString("en-US", { 
-          hour: "2-digit", 
-          minute: "2-digit", 
+        {now.toLocaleTimeString("en-US", {
+          hour: "2-digit",
+          minute: "2-digit",
           second: "2-digit",
-          hour12: false 
+          hour12: false
         })}
       </span>
     </div>
@@ -76,7 +78,7 @@ function App() {
                 <div className="flex items-center gap-2">
                   <Button variant="ghost" size="icon" className="relative" data-testid="button-notifications">
                     <Bell className="h-5 w-5" />
-                    <Badge 
+                    <Badge
                       className="absolute -top-1 -right-1 h-5 w-5 flex items-center justify-center p-0 text-[10px] bg-risk-critical text-risk-critical-foreground border-0"
                     >
                       3
