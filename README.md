@@ -140,15 +140,52 @@ On the analytics side, these topics can be modeled as ksqlDB streams and joined 
 
 ---
 
-## Dataset and research references
+## Dataset and Research References
 
 ### Dataset
-Mendeley Data dataset (download):  
-[https://data.mendeley.com/datasets/xjmtb22pff/1](https://data.mendeley.com/datasets/xjmtb22pff/1)
+- **Safe and Unsafe Behaviours Dataset**  
+  High-resolution video dataset for safe and unsafe video action categories (8 classes).  
+  https://data.mendeley.com/datasets/xjmtb22pff/1
 
-### Related paper
-Springer / *Multimedia Tools and Applications* article associated with this dataset:  
-[https://link.springer.com/article/10.1007/s11042-024-19276-8](https://link.springer.com/article/10.1007/s11042-024-19276-8)
+### Associated Research Paper
+- **Oğuzhan Önal & Emre Dandıl (2024)**  
+  *Unsafe-Net: YOLO v4 and ConvLSTM based computer vision system for real-time detection of unsafe behaviours in workplace.*  
+  Multimedia Tools and Applications, 84(29):34967-34993, 2025. DOI: https://doi.org/10.1007/s11042-024-19276-8 :contentReference[oaicite:1]{index=1}
+
+---
+
+## Action Recognition Models References
+
+- **SlowFast**  
+  C. Feichtenhofer, H. Fan, J. Malik, K. He.  
+  *SlowFast Networks for Video Recognition.*  
+  Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV), 2019.  
+  https://openaccess.thecvf.com/content_ICCV_2019/papers/Feichtenhofer_SlowFast_Networks_for_Video_Recognition_ICCV_2019_paper.pdf
+
+- **I3D**  
+  J. Carreira, A. Zisserman.  
+  *Quo Vadis, Action Recognition? A New Model and the Kinetics Dataset.*  
+  Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2017.  
+  https://arxiv.org/abs/1705.07750
+
+- **TwoStream**  
+  K. Simonyan, A. Zisserman.  
+  *Two-Stream Convolutional Networks for Action Recognition in Videos.*  
+  Advances in Neural Information Processing Systems (NeurIPS Workshop), 2014.  
+  https://arxiv.org/abs/1406.2199
+
+- **TSM**  
+  J. Lin, C. Gan, S. Han.  
+  *TSM: Temporal Shift Module for Efficient Video Understanding.*  
+  Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV), 2019.  
+  https://arxiv.org/abs/1811.08383
+
+- **TimeSformer**  
+  G. Bertasius, H. Wang, L. Torresani.  
+  *Is Space-Time Attention All You Need for Video Understanding?*  
+  International Conference on Machine Learning (ICML), 2021.  
+  https://proceedings.mlr.press/v139/bertasius21a.html
+
 
 ---
 
